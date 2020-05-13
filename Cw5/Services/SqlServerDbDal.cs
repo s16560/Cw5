@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace Cw5.Services
@@ -34,7 +35,7 @@ namespace Cw5.Services
                     st.FirstName = dr["FirstName"].ToString();
                     st.LastName = dr["LastName"].ToString();
                     st.BirthDate = dr["BirthDate"].ToString();
-                    st.Name = dr["Name"].ToString();
+                    st.Studies = dr["Name"].ToString();
                     st.Semester = dr["Semester"].ToString();
 
                     list.Add(st);
@@ -76,7 +77,7 @@ namespace Cw5.Services
                     st.FirstName = dr["FirstName"].ToString();
                     st.LastName = dr["LastName"].ToString();
                     st.BirthDate = dr["BirthDate"].ToString();
-                    st.Name = dr["Name"].ToString();
+                    st.Studies = dr["Name"].ToString();
                     st.Semester = dr["Semester"].ToString();
 
                     list.Add(st);
