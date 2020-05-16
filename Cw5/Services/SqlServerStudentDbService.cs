@@ -171,7 +171,30 @@ namespace Cw5.Services
                  return new Response("400", null, null);
 
             }
-    
+
+        public bool StudentExists(string IndexNumber)
+        {
+            using (var con = new SqlConnection(ConString))
+            using (var com = new SqlCommand())
+            {
+                com.Connection = con;
+                con.Open();
+                com.CommandText = @"select IndexNumber 
+                                   from Student 
+                                   where IndexNumber = @IndexNumber";
+                com.Parameters.AddWithValue("IndexNumber", IndexNumber);
+
+                var dr = com.ExecuteReader();
+                if (!dr.Read())
+                {
+                    dr.Close();
+                    return false;
+                }
+                               
+                return true;
+                
+            }
+        }
 
     }
 }

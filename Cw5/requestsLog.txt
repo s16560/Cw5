@@ -1,0 +1,36 @@
+Path: /api/students
+Query: 
+Method: GET
+Body: 
+
+Path: /api/students
+Query: 
+Method: POST
+Body: {
+"IndexNumber": "s6789",
+"FirstName": "Kazimierz",
+"LastName": "Fabianski",
+"BirthDate": "1999-11-10",
+"Studies": "informatyka"
+}
+
+Path: /api/students
+Query: 
+Method: POST
+Body: 
+
+Path: /api/students
+Query: 
+Method: POST
+Body: 
+
+Path: /api/students
+Query: 
+Method: POST
+Body: 
+
+Path: /api/students
+Query: 
+Method: GET
+Body: 
+
